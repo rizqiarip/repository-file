@@ -1,0 +1,41 @@
+
+- StrictARP
+
+If you’re using kube-proxy in IPVS mode, since Kubernetes v1.14.2 you have to 
+enable strict ARP mode.
+
+Note, you don’t need this if you’re using kube-router as service-proxy because 
+it is enabling strict ARP by default.
+
+Currently in some clusters it's needed to set strictARP: true, so that 
+externalTrafficPolicy: Local correctly works (baremetal + metallb).
+
+- Replicaset
+
+A ReplicaSet (RS) is a Kubernetes object used to maintain a stable set of 
+replicated pods running within a cluster at any given time.
+
+- Rewrite target ingress
+
+nginx.ingress.kubernetes.io/rewrite-target	
+Target URI where the traffic must be redirected	string
+
+- PathType : Prefix
+
+Prefix: Matches based on a URL path prefix split by /. Matching is case 
+sensitive and done on a path element by element basis. A path element 
+refers to the list of labels in the path split by the / separator. A request is 
+a match for path p if every p is an element-wise prefix of p of the request path.
+
+- Replace this <b> tag with <strong>.
+
+The <strong>/<b> and <em>/<i> tags have exactly the same effect in most web browsers, 
+but there is a fundamental difference between them: <strong> and <em> have a semantic 
+meaning whereas <b> and <i> only convey styling information like CSS.
+
+- Perbedaan declarative pipeline dan scripted
+
+Declarative dan Scripted hanya berbeda di pendekatan programming nya saja
+Declarative pipeline selalu diawali dengan kata pipeline di lain sisi
+Scripted selalu diawali dengan kata node, declarative bisa terdiri dari banyak steps
+Declarative lebih mudah untuk di maintain dan lebih mudah untuk digunakan
