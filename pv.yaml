@@ -11,9 +11,6 @@
       storage: 10Gi
     accessModes:
       - ReadWriteMany
-    nfs:
-      server: arip-kube-worker
-      path: "/html"
   ---
   apiVersion: v1
   kind: PersistentVolume
@@ -28,6 +25,3 @@
       storage: 10Gi
     accessModes:
       - ReadWriteMany
-    nfs:
-      server: arip-kube-worker
-      path: "/mysql"
